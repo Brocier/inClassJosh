@@ -11,7 +11,7 @@ router.get('/:operator', (req, res) => {
   if (operator === 'add') {
   res.render('math',{
     math:`${num1 + num2}`})  
-   } else if (operator === 'subtract')  {
+    } else if (operator === 'subtract')  {
       res.render('math',{
       math:`${num1 - num2}`})
   } else if (operator === 'multiply')  {
@@ -21,8 +21,8 @@ router.get('/:operator', (req, res) => {
       res.render('math',{
       math:`${num1 / num2}`})
   } else {
-     res.render('math',{
-     math:`not a valid operator`})
+      res.render('math',{
+      math:`not a valid operator`})
   }
 })
 
